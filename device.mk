@@ -326,7 +326,8 @@ PRODUCT_PACKAGES += \
     KarnaWifiResources \
     SuryaFrameworks \
     SuryaSettingsProvider \
-    SuryaWifiResources
+    SuryaWifiResources \
+    NotchBarKillerSurya
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
