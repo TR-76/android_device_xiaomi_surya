@@ -13,6 +13,10 @@ BUILD_BROKEN_DUP_RULES := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+ODM_MANIFEST_SKUS += surya
+ODM_MANIFEST_SURYA_FILES := \
+    $(COMMON_PATH)/configs/hidl/manifest-qva.xml \
+    $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_surya
