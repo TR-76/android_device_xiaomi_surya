@@ -182,5 +182,9 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
