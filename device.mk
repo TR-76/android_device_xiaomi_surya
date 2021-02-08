@@ -14,9 +14,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # TR
 $(call inherit-product-if-exists, vendor/tr/config.mk)
 
-# ANX
-$(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/surya/surya-vendor.mk)
 
