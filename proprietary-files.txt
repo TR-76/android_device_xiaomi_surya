@@ -95,6 +95,10 @@ vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 # Audio firmware - from surya
 vendor/firmware/tas256x_reg.bin
 
+# Batterysecret - from surya
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Camera - from surya
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
