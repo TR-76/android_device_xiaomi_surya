@@ -11,6 +11,9 @@ DEVICE_PATH := device/xiaomi/surya
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := surya,karna
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += surya
