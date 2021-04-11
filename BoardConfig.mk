@@ -28,6 +28,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
 # Kernel
 TARGET_KERNEL_CONFIG := surya_defconfig
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
