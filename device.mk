@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
+    Snap
 
 # Charger
 PRODUCT_PACKAGES += \
