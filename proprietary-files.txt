@@ -478,3 +478,6 @@ vendor/firmware/drv2624.bin
 vendor/firmware/drv2624.rtp
 vendor/firmware/Drv2624Date.ini
 vendor/firmware/osc_rtp_24K_5s.bin
+
+# WLAN - from surya
+vendor/bin/cnss-daemon
