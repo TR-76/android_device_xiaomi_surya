@@ -1,0 +1,4 @@
+# Audio
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+vendor.audio.chk.cal.spk=0
