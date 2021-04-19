@@ -26,6 +26,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 VANILLA_BUILD := true
 $(call inherit-product, vendor/wave/configs/common.mk)
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+
 # Device identifier
 PRODUCT_NAME := wave_surya
 PRODUCT_DEVICE := surya
