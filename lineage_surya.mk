@@ -27,6 +27,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+
 # Device identifier
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
