@@ -44,8 +44,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_surya
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/surya-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
-TARGET_KERNEL_USE_LATEST_CLANG := true
+TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_ADDITIONAL_FLAGS += LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
