@@ -1,4 +1,4 @@
-# surya package version: V12.0.7.0.RJGEUXM, unless stated otherwise
+# surya package version: V12.0.6.7.RJGEUXM, unless stated otherwise
 
 # ADSP - from surya
 vendor/bin/adsprpcd
