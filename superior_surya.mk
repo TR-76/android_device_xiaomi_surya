@@ -20,6 +20,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Charging Animation
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
+# MG-APKS
+$(call inherit-product-if-exists, vendor/mg-apks/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 PRODUCT_NAME := superior_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
