@@ -21,6 +21,9 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 # Mulch Webview
 $(call inherit-product-if-exists, vendor/mulch/mulch.mk)
 
+# BCR
+$(call inherit-product-if-exists, vendor/bcr/config.mk)
+
 # ViperFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
