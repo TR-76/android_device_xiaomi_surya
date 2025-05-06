@@ -30,6 +30,8 @@ $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
 # Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
