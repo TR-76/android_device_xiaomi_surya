@@ -217,8 +217,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_surya)
-
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/security/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
@@ -321,6 +319,15 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/properties/build_surya.prop:$(TARGET_COPY_OUT_ODM)/etc/build_surya.prop \
+    $(LOCAL_PATH)/properties/build_karna.prop:$(TARGET_COPY_OUT_ODM)/etc/build_karna.prop
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/properties/build_surya.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_surya.prop \
+    $(LOCAL_PATH)/properties/build_karna.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_karna.prop
 
 # QTI
 PRODUCT_COPY_FILES += \
