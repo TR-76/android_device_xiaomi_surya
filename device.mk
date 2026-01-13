@@ -29,6 +29,9 @@ $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 # Inherit surya firmware images
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
+# Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/surya-camera.mk)
+
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
 
