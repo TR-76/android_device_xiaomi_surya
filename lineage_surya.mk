@@ -17,6 +17,9 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Cromite Webview
+$(call inherit-product-if-exists, vendor/cromite/cromite.mk)
+
 # Axion build flags
 AXION_CAMERA_REAR_INFO := 64,13,2,2
 AXION_CAMERA_FRONT_INFO := 20
