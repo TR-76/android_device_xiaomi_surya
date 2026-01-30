@@ -24,6 +24,9 @@ $(call inherit-product-if-exists, vendor/cromite/cromite.mk)
 $(call inherit-product-if-exists, vendor/microg/config.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# Firmware
+$(call inherit-product-if-exists, vendor/xiaomi/surya-firmware/config.mk)
+
 # Axion build flags
 AXION_CAMERA_REAR_INFO := 64,13,2,2
 AXION_CAMERA_FRONT_INFO := 20
