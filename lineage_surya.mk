@@ -14,7 +14,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Lineage stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Axion build flags
+AXION_CAMERA_REAR_INFO := 64,13,2,2
+AXION_CAMERA_FRONT_INFO := 20
+AXION_PROCESSOR := Qualcomm®_Snapdragon™_732G
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+
+# Flashlight strength
+TORCH_STR_SUPPORTED := true
+
+# Charging
+BYPASS_CHARGE_SUPPORTED ?= true
+BYPASS_CHARGE_TOGGLE_PATH ?= /sys/class/power_supply/battery/input_suspend
 
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
