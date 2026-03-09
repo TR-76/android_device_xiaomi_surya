@@ -19,6 +19,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Cromite Webview
 $(call inherit-product-if-exists, vendor/cromite/cromite.mk)
 
+# microG
+$(call inherit-product-if-exists, vendor/microg/config.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # crDroid build flag
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_DISABLE_MATLOG := true
