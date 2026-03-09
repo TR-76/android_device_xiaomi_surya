@@ -16,6 +16,9 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Cromite Webview
+$(call inherit-product-if-exists, vendor/cromite/cromite.mk)
+
 # crDroid build flag
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_DISABLE_MATLOG := true
